@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TCC.MainPage"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="30"
+                             Padding="40"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center">
+
+            <Button
+                x:Name="Empresa"
+                Text="Clique aqui se você é uma empresa" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnClickEmpresa"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Candidato"
+                Text="Clique aqui se esta buscando emprego" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnClickCandidato"
+                HorizontalOptions="Fill" />
+
+            <!-- Título -->
+            <Label Text="Bem-vindo ao EmpregosAqui"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="#2C3E50"
+                   HorizontalOptions="Center" />
+
+            <!-- Subtítulo -->
+            <Label Text="Seu app moderno em .NET MAUI"
+                   FontSize="18"
+                   TextColor="#7F8C8D"
+                   HorizontalOptions="Center" />
+
+
+            <!-- Rodapé opcional -->
+            <Label Text="© 2025 por Você"
+                   FontSize="12"
+                   TextColor="#BDC3C7"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+
+
+ 
